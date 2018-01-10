@@ -1,14 +1,246 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../../lib/Swiper/dist/css/swiper.min.css" />
+		<script src="../../lib/Swiper/dist/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+
 	<body>
-		<div id="container">
+		<!--最上面的标题-->
+		<div class="header">
+			<div class="header-left">
+				<ul>
+					<li>
+						<a href="#">北京</a><span><a href="#">[切换城市]</a></span></li>
+					<li>同城帮首页</li>
+				</ul>
+			</div>
+
+			<div class="header-right">
+				<ul>
+					<li>登录</li>
+					<li>注册</li>
+					<li>我的订单</li>
+					<li>在线客服</li>
+					<li>客户服务▼</li>
+					<li>论坛</li>
+					<li>投诉建议</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo">
+			<div class="logo-left">
+				<img src="../images/logo.png" />
+			</div>
+			<div class="logo-right">
+				<ul>
+					<li>二手优品</li>
+					<li>手机回收</li>
+					<li>手机维修</li>
+					<li>电脑维修</li>
+					<li>以旧换新</li>
+					<li>手机租用</li>
+				</ul>
+			</div>
+		</div>
+		<!--轮播图部分-->
+		<div class="swiper">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../images/01.png" /></div>
+					<div class="swiper-slide"><img src="../images/02.png" /></div>
+					<div class="swiper-slide"><img src="../images/04.jpg" /></div>
+					<div class="swiper-slide"><img src="../images/02.png" /></div>
+					<div class="swiper-slide"><img src="../images/04.jpg" /></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<!--<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>-->
+			</div>
+			<!--轮播图的框-->
+			<div class="position">
+				
+				<div class="definite one">
+					<p> 修手机/Pad<span>＞</span></p>
+				</div>
+
+				<div class="definite  two">
+					<p>修电脑<span>＞</span></p>
+				</div>
+
+				<div class="definite three">
+					<p>卖手机/电脑<span>＞</span></p>
+				</div>
+				<div class="definite four">
+					<p>买二手机<span>＞</span></p>
+				</div>
+				
+					<!--联动部分-->
+		<div class="definite-jion">
+			<div class="definite-one-jion">
+				
+			</div>
+			<div class="definite-two-jion">
+				
+			</div>
+			<div class="definite-three-jion">
+			</div>
+			<div class="definite-four-jion">
+				
+			</div>
+			
 			
 		</div>
+		
+			</div>
+		</div>
+	
+		<!--部分介绍-->
+		<div class="portion">
+			<dl>
+				<dd>手机换屏</dd>
+				<dd>上门服务 180天质保</dd>
+				<dt><img src="../images/3-1.png"/></dt>
+			</dl>
+			<dl>
+				<dd>iPhone更换全新电池</dd>
+				<dd>仅需98元起</dd>
+				<dt><img src="../images/3-2.png"/></dt>
+			</dl>
+
+			<dl>
+				<dd>0元拿kindle</dd>
+				<dd>以旧换新 最低0元拿</dd>
+				<dt><img src="../images/3-3.png"/></dt>
+			</dl>
+			<dl>
+				<dd>手机升级</dd>
+				<dd>0元起拿ipone</dd>
+				<dt><img src="../images/3-4.png"/></dt>
+			</dl>
+		</div>
+		<!--phone-recycle部分-->
+		<div class="phone-recycle">
+			<h4>热门手机回收</h4>
+			<p>查看更多﹥</p>
+		</div>
+		<div class="recycle-details">
+			<div id="recycle-details-left">
+				<img src="../images/11.png" />
+
+			</div>
+			<div class="recycle-details-right">
+				<dl>
+					<dt><img src="../images/s1.png"/></dt>
+					<dd>苹果iphone6</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="../images/s2.png"/></dt>
+					<dd>苹果iphone5s</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="../images/s3.png"/></dt>
+					<dd>小米M4</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="../images/s4.png"/></dt>
+					<dd>华为Mete7</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="../images/s5.png"/></dt>
+					<dd>魅族MX5</dd>
+				</dl>
+			</div>
+		</div>
+
+		<!--choiceness部分-->
+		<div class="phone-recycle">
+			<h4>优品精选</h4>
+			<p>查看更多﹥</p>
+		</div>
+		<div class="recycle-details">
+			<div id="recycle-details-left">
+				<img src="../images/12.png" />
+
+			</div>
+			<div class="recycle-details-right">
+				<dl>
+					<dt><img src="../../dist/images/t1.png"/></dt>
+					<dd>苹果iphone7</dd>
+					<dd>¥3499</dd>
+				</dl>
+				<dl>
+					<dt><img src="../../dist/images/t2.png"/></dt>
+					<dd>苹果iphone5s</dd>
+					<dd>¥609</dd>
+				</dl>
+				<dl>
+					<dt><img src="../../dist/images/t3.png"/></dt>
+					<dd>苹果iphone SE</dd>
+					<dd>¥1299</dd>
+				</dl>
+
+				<dl>
+					<dt><img src="../../dist/images/t4.png"/></dt>
+					<dd>华为荣耀4X</dd>
+					<dd>¥239</dd>
+				</dl>
+				<dl>
+					<dt><img src="../../dist/images/t5.png"/></dt>
+					<dd>小米 小米 MIX2</dd>
+					<dd>¥2888</dd>
+				</dl>
+			</div>
+		</div>
+
+
+
+		<!--到店维修-->
+		<div class="service-headline">
+			<h4>到店维修</h4>
+		</div>
+
+		<div class="store-message">
+			<div class="">
+			</div>
+			<div class="store-sort">
+			</div>
+		</div>
+		
+		
+		
+		
 	</body>
-	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+	<script src="../../dist/js/index.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

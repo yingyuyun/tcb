@@ -1,3 +1,264 @@
+//公共样式
+@bgwidth:100%; 
+@leftwidth:10%; 
+@width:width; 
+@bgcolor:#f6f6f6; 
+@color:#666;
+@licolor:#929292;
+
 body{
-    background-color: #ffa;
+    width: 100%;
+    margin: auto;
+    background: #f7f7f7;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+     font-size: 13px;
+    line-height: 30px;
+}
+dd:first-child{
+    font-size: 20px;
+    color: @color;
+}
+
+dd:nth-child(2){
+    font-size: 15px;
+    color: @licolor;
+}
+h4{
+        height:40px;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 400;
+        color: @color;
+    }
+    
+    .bg-green{
+        background: green;
+        p{
+            color: red;
+        }
+    }
+//最上面标题部分
+.header{
+    width: 100%;
+    height:35px;
+    display: flex;
+    justify-content: space-between;
+   background: @bgcolor;
+    border-bottom: solid 1px #ddd;
+
+    .header-left{
+        width: 20%;
+        margin-left: 20px;
+    }
+    .header-right{
+        width: 45%;
+        margin-right: 20px;
+        ul{
+        width: 100%;
+        li{
+            flex-wrap: nowrap;
+        }
+        }
+    }
+}
+//logo
+.logo{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: #fff;
+    .logo-left{
+        width:164px;
+        height:54px;
+        margin-left: 80px;
+    }
+    .logo-right{
+        width:55%;
+        margin-right: 30px;
+        li{
+            font-size: 16px;
+        }
+    }
+}
+
+//轮播图
+.swiper{
+    width:1200px;
+    margin: auto;
+    position: relative;
+    background: #fff;
+    .swiper-container{
+        width: 1200px;
+        height:350px;
+        text-align: center;
+    }
+    .position{
+    width: 260px;
+    height:340px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+     opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #222;
+    z-index: 100;
+    .definite{
+        line-height: 84px;
+        text-align: center;
+        color: #fff;
+        border-bottom: solid 1px #f6f6f6;
+        p:after{
+            
+            font-size: 17px;
+            span{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+}
+
+
+
+ .swiper-pagination{
+    position: relative;
+    left: 450px !important;
+ }
+ 
+.swiper-pagination-bullet{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.definite-jion{
+    position: relative;
+    z-index: 120;
+    .definite-one-jion{
+        width:300px;
+        height:200px;
+        display: none;
+        position: absolute;
+        top:-340px;
+        left:260px;
+        background: bisque;
+    }
+    .definite-two-jion{
+        width:500px;
+        height:300px;
+        display: none;
+        position: absolute;
+        top:-340px;
+        left:260px;
+        background: yellow;
+    }
+    .definite-three-jion{
+        width:400px;
+        height:400px;
+        position: absolute;
+        top:-340px;
+        left:260px;
+        display: none;
+        background:cyan;
+    }
+    .definite-four-jion{
+        width:300px;
+        height:500px;
+        position: absolute;
+        top:-340px;
+        left:260px;
+        display: none;
+        background: darkcyan;
+    }
+}
+
+
+
+
+
+
+//部分介绍
+.portion{
+    width:90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    background: #fff;
+    dl{
+        text-align: center;
+    }
+}
+
+
+//phone-recycle部分
+.phone-recycle{
+    width:90%;
+    margin:auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+    p{
+        color: @color;
+        font-size: 13px;
+    }
+    
+}
+
+.recycle-details{
+    width: 90%;
+    height:300px;
+    margin: auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    .recycle-details-right{
+        width:80%;
+        height:300px;
+        display: flex;
+        justify-content: space-around;
+        dl{
+            width:30%;
+            height:300px;
+            text-align: center;
+            border-right:solid 1px #f7f7f7;
+            dt{
+                margin-top: 60px;
+            }
+        }
+        dl:last-child{
+    border-right:red;
+}
+    }
+}
+
+//到店维修
+
+    .service-headline{
+        width:@leftwidth*9;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .store-message{
+        width:@bgwidth;
+        background: #fff;
+    }
+
+.store-sort{
+    width:100%;
+    height: 50px;
+    background: blue;
 }
